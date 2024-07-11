@@ -1,0 +1,12 @@
+KPrim:
+  incdirs: [
+    .,
+  ]
+  files: [
+    modules/Binary\ Counters/clz_decomposing.vhd.vhd,
+    modules/Binary\ Counters/clz_for.vhd,
+    modules/Dividers/divider_HF.vhd,
+    modules/Dividers/divider_HP.vhd,
+    modules/Dividers/divider_LS.vhd,
+    modules/Dividers/divider_std.vhd,
+  ]
