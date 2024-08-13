@@ -30,7 +30,8 @@ module div_tb;
     .divisor_i(divisor),
     .div_enable_i(div_enable),
     .division_finished_out(division_finished),
-    .result({remainder, quotient})
+    .result_div (quotient),
+    .result_rem (remainder)
   );
 
   // Testbench code
