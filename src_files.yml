@@ -3,7 +3,7 @@ KPrim:
     .,
   ]
   files: [
-    modules/Binary\ Counters/clz_decomposing.vhd.vhd,
+    modules/Binary\ Counters/clz_decomposing.vhd,
     modules/Binary\ Counters/clz_for.vhd,
     modules/Dividers/divider_HF.vhd,
     modules/Dividers/divider_HP.vhd,
