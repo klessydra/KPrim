@@ -3,6 +3,7 @@
 module div_tb;
 
   // Parameters
+  parameter DIV_IMP = 5;
   parameter DATA_WIDTH = 32;
 
   // Signals
@@ -19,6 +20,7 @@ module div_tb;
   // Instantiate DUT
   divider 
   #( 
+    .divider_implementation(DIV_IMP),
     .size(DATA_WIDTH) 
   )
   dut (
