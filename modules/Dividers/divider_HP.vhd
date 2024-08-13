@@ -12,7 +12,7 @@ use ieee.numeric_std.all;
 -- This is a synchronous unit, so it takes as input also clock and reset signals.
 -- Finally, the division result is ready when the output signal 
 -- division_finished_out is high. The result is available in the remainder reg.
-entity divider is
+entity divider_HP is
     Port ( dividend_i               : in  STD_LOGIC_VECTOR(31 downto 0);
            divisor_i                : in  STD_LOGIC_VECTOR(31 downto 0);
            reset                    : in  STD_LOGIC;
@@ -21,9 +21,9 @@ entity divider is
            division_finished_out    : out STD_LOGIC
            --result                   : out std_logic_vector(63 downto 0)
            );
-end divider;
+end divider_HP;
 
-architecture Behavioral of divider is
+architecture Behavioral of divider_HP is
 component CLZ_64
     Port (  input : in  STD_LOGIC_VECTOR(63 downto 0);
             output: out STD_LOGIC_VECTOR(5 downto 0)

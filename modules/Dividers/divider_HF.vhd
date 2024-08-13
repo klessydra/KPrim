@@ -34,7 +34,7 @@ use ieee.math_real.all;
 -- The division result is ready when the output signal 
 -- division_finished_out is high. The result is available in the remainder reg.
 
-entity divider is
+entity divider_HF is
   generic (
     size : natural := 32
   );
@@ -47,9 +47,9 @@ entity divider is
     division_finished_out : out std_logic;
     result                : out std_logic_vector((size*2)-1 downto 0) -- Decomment if you want to see the result
   );
-end divider;
+end divider_HF;
 
-architecture Behavioral of divider is
+architecture Behavioral of divider_HF is
 
   constant size_width : integer := integer(ceil(log2(real(size))));
 
