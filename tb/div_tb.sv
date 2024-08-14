@@ -13,8 +13,8 @@ module div_tb;
   logic [DATA_WIDTH-1:0] divisor;
   logic [DATA_WIDTH-1:0] quotient;
   logic [DATA_WIDTH-1:0] remainder;
-  logic division_finished;
-  logic division_finished_lat;
+  logic div_finished;
+  logic div_finished_lat;
   logic div_enable;
 
   // Instantiate DUT
@@ -28,8 +28,8 @@ module div_tb;
     .reset(rst),
     .dividend_i(dividend),
     .divisor_i(divisor),
-    .div_enable_i(div_enable),
-    .division_finished_out(division_finished),
+    .div_enable(div_enable),
+    .div_finished(div_finished),
     .result_div (quotient),
     .result_rem (remainder)
   );
@@ -53,7 +53,7 @@ module div_tb;
     repeat(500) begin
       @(posedge clk)
       // Check result
-      if (division_finished) begin
+      if (div_finished) begin
         
         if (divisor == 0) begin
           // Division by zero - expect quotient and remainder to be 0
@@ -84,7 +84,7 @@ module div_tb;
         //#10 rst = 0;
       end
       // Wait for DUT to finish computing
-      if (division_finished_lat == 'b1) begin
+      if (div_finished_lat == 'b1) begin
         dividend = $random;
         divisor  = $random;
         div_enable = 1'b1;
@@ -99,9 +99,9 @@ module div_tb;
 
   always_ff @(posedge clk) begin
       if (rst)
-          division_finished_lat <= 'b0; // Reset q to 0 on reset
+          div_finished_lat <= 'b0; // Reset q to 0 on reset
       else
-          division_finished_lat <= division_finished; // Capture the input d on the rising edge of the clock
+          div_finished_lat <= div_finished; // Capture the input d on the rising edge of the clock
   end
 
   // Generate clock
