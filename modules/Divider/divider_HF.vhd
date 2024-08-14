@@ -1,25 +1,25 @@
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
---██╗░░░██╗░█████╗░██████╗░██╗░█████╗░██████╗░██╗░░░░░███████╗
---██║░░░██║██╔══██╗██╔══██╗██║██╔══██╗██╔══██╗██║░░░░░██╔════╝
---╚██╗░██╔╝███████║██████╔╝██║███████║██████╦╝██║░░░░░█████╗░░
---░╚████╔╝░██╔══██║██╔══██╗██║██╔══██║██╔══██╗██║░░░░░██╔══╝░░
---░░╚██╔╝░░██║░░██║██║░░██║██║██║░░██║██████╦╝███████╗███████╗
---░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝╚══════╝
+-- ██╗░░░██╗░█████╗░██████╗░██╗░█████╗░██████╗░██╗░░░░░███████╗
+-- ██║░░░██║██╔══██╗██╔══██╗██║██╔══██╗██╔══██╗██║░░░░░██╔════╝
+-- ╚██╗░██╔╝███████║██████╔╝██║███████║██████╦╝██║░░░░░█████╗░░
+-- ░╚████╔╝░██╔══██║██╔══██╗██║██╔══██║██╔══██╗██║░░░░░██╔══╝░░
+-- ░░╚██╔╝░░██║░░██║██║░░██║██║██║░░██║██████╦╝███████╗███████╗
+-- ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝╚══════╝
 --
---██╗░░░░░░█████╗░████████╗███████╗███╗░░██╗░█████╗░██╗░░░██╗         ██████╗░██╗██╗░░░██╗██╗██████╗░███████╗██████╗░
---██║░░░░░██╔══██╗╚══██╔══╝██╔════╝████╗░██║██╔══██╗╚██╗░██╔╝         ██╔══██╗██║██║░░░██║██║██╔══██╗██╔════╝██╔══██╗
---██║░░░░░███████║░░░██║░░░█████╗░░██╔██╗██║██║░░╚═╝░╚████╔╝░         ██║░░██║██║╚██╗░██╔╝██║██║░░██║█████╗░░██████╔╝
---██║░░░░░██╔══██║░░░██║░░░██╔══╝░░██║╚████║██║░░██╗░░╚██╔╝░░         ██║░░██║██║░╚████╔╝░██║██║░░██║██╔══╝░░██╔══██╗
---███████╗██║░░██║░░░██║░░░███████╗██║░╚███║╚█████╔╝░░░██║░░░         ██████╔╝██║░░╚██╔╝░░██║██████╔╝███████╗██║░░██║
---╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░         ╚═════╝░╚═╝░░░╚═╝░░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝
+-- ██╗░░░░░░█████╗░████████╗███████╗███╗░░██╗░█████╗░██╗░░░██╗         ██████╗░██╗██╗░░░██╗██╗██████╗░███████╗██████╗░
+-- ██║░░░░░██╔══██╗╚══██╔══╝██╔════╝████╗░██║██╔══██╗╚██╗░██╔╝         ██╔══██╗██║██║░░░██║██║██╔══██╗██╔════╝██╔══██╗
+-- ██║░░░░░███████║░░░██║░░░█████╗░░██╔██╗██║██║░░╚═╝░╚████╔╝░         ██║░░██║██║╚██╗░██╔╝██║██║░░██║█████╗░░██████╔╝
+-- ██║░░░░░██╔══██║░░░██║░░░██╔══╝░░██║╚████║██║░░██╗░░╚██╔╝░░         ██║░░██║██║░╚████╔╝░██║██║░░██║██╔══╝░░██╔══██╗
+-- ███████╗██║░░██║░░░██║░░░███████╗██║░╚███║╚█████╔╝░░░██║░░░         ██████╔╝██║░░╚██╔╝░░██║██████╔╝███████╗██║░░██║
+-- ╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░         ╚═════╝░╚═╝░░░╚═╝░░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝
 --
---░██████╗████████╗░█████╗░███╗░░██╗██████╗░░█████╗░██████╗░██████╗░
---██╔════╝╚══██╔══╝██╔══██╗████╗░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗
---╚█████╗░░░░██║░░░███████║██╔██╗██║██║░░██║███████║██████╔╝██║░░██║
---░╚═══██╗░░░██║░░░██╔══██║██║╚████║██║░░██║██╔══██║██╔══██╗██║░░██║
---██████╔╝░░░██║░░░██║░░██║██║░╚███║██████╔╝██║░░██║██║░░██║██████╔╝
---╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░
+-- ░██████╗████████╗░█████╗░███╗░░██╗██████╗░░█████╗░██████╗░██████╗░
+-- ██╔════╝╚══██╔══╝██╔══██╗████╗░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗
+-- ╚█████╗░░░░██║░░░███████║██╔██╗██║██║░░██║███████║██████╔╝██║░░██║
+-- ░╚═══██╗░░░██║░░░██╔══██║██║╚████║██║░░██║██╔══██║██╔══██╗██║░░██║
+-- ██████╔╝░░░██║░░░██║░░██║██║░╚███║██████╔╝██║░░██║██║░░██║██████╔╝
+-- ╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
 library IEEE;
@@ -84,8 +84,8 @@ architecture Behavioral of divider_HF is
   signal dividend_wire    : std_logic_vector(size-1 downto 0);     --  Dividend Input Register
   signal divisor_wire     : std_logic_vector(size-1 downto 0);     --  Divisor Input Register
   signal div_enable_wire  : std_logic;
-  signal count            : integer range size downto -1;     -- Counter register. The counter shows the remaining division steps.
-  signal count_wire       : integer range size downto -1;     -- Counter wire. Counter register input.
+  signal count            : integer range size downto 0;     -- Counter register. The counter shows the remaining division steps.
+  signal count_wire       : integer range size downto 0;     -- Counter wire. Counter register input.
   signal remaining_shifts : integer range size downto 0;     -- Counter wire. Counter register input.
   signal S                : std_logic_vector(size downto 0); -- Difference signal. Output of the subtractor unit 1 (RemainderMSW - divisor_reg)
 
@@ -94,7 +94,7 @@ architecture Behavioral of divider_HF is
   signal clz_divisor_wire   : integer range size downto 0;           -- Output of the size bits Count Leading Zero unit used to detect the divisor_reg MSOne.
   signal clz_remainder      : integer range (size*2) downto 0;       -- Output of the size*2 bits Count Leading Zero unit used to detect the Remainder MSOne.
   signal clz_remainder_wire : integer range (size*2) downto 0;       -- Output of the size*2 bits Count Leading Zero unit used to detect the Remainder MSOne.
-  signal shift              : integer range size-1 downto -size-1;          -- Difference signal. Output of the subtractor unit 2 (clz_remainder - clz_divisor - 1)
+  signal shift              : signed(size_width downto 0);           -- Difference signal. Output of the subtractor unit 2 (clz_remainder - clz_divisor - 1)
   signal shift_amt          : unsigned(size_width-1 downto 0);         -- Difference signal. Output of the subtractor unit 2 (clz_remainder - clz_divisor - 1)
   signal clz_rem_in         : std_logic_vector((size*2)-1 downto 0);   -- CLZ64 input signal
   signal clz_remainder_vec  : std_logic_vector(size_width downto 0);   -- CLZ64 output
@@ -183,7 +183,7 @@ begin
       -- If the Shifter is enabled, then dynamic shift is performed and the counter is updated by shift_amount
       if (shifter_enable='1') then
         --count_wire <= count + shift;
-        count_wire <= size when count + shift > size else count + shift;
+        count_wire <= size when count + to_integer(shift) > size else count + to_integer(shift);
         --if to_unsigned(count + shift, size_width+1)(size_width) then
         --  count_wire <= size;
         --else
@@ -207,15 +207,19 @@ begin
     limited_shift  <= '0';
     --shift <= size-1 when clz_remainder-clz_divisor-1 > size-1 else clz_remainder-clz_divisor-1;
     if (clz_remainder-clz_divisor-1 > size-1) then -- take the MSB of index "size_width"
-      shift <= size-1;
+      shift <= to_signed(size-1, shift'length);
     else
-      shift <= clz_remainder-clz_divisor-1;
+      if (clz_remainder-clz_divisor-1 > 0) then
+        shift <= to_signed(clz_remainder-clz_divisor-1, shift'length);
+      else
+        shift <= (others => '0');
+      end if;
     end if;
     -- shift_amt        <= to_unsigned(shift, shift_amt'length);
     shift_amt <= (others => '0');
 
     if (div_enable_reg='0') then
-      clz_rem_in <= allzeros(size-1 downto 0) & dividend_i;
+      clz_rem_in <= (0 to size-1 => '0') & dividend_i;
     else
       clz_rem_in <= new_R;
     end if;
@@ -224,12 +228,14 @@ begin
     -- If Remainder LZs > Divisor LZs, the shifter is enabled. 
     if (shift > 0 and shifter_enable_reg='0' and div_enable_reg='1') then
       shifter_enable <= '1';
-      shift_amt      <= to_unsigned(shift, shift_amt'length);
+      shift_amt      <= unsigned(shift(size_width-1 downto 0));
 
       -- Shift amount is limited to size
       if shift > (size-count-1) then
         shifter_in    <= R((size*2)-2 downto 0) &'0';
-        shift_amt     <= to_unsigned((size-count-1), shift_amt'length);
+        if (size-count-1 >= 0) then
+          shift_amt     <= to_unsigned((size-count-1), shift_amt'length);
+        end if;
         limited_shift <= '1';
       end if;
     end if;

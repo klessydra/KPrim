@@ -22,8 +22,8 @@ entity divider is
     clk                   : in  std_logic;
     dividend_i            : in  std_logic_vector(size-1 downto 0);
     divisor_i             : in  std_logic_vector(size-1 downto 0);
-    div_enable_i          : in  std_logic;
-    division_finished_out : out std_logic;
+    div_enable            : in  std_logic;
+    div_finished          : out std_logic;
     result_div            : out std_logic_vector(size-1 downto 0); -- Decomment if you want to see the result
     result_rem            : out std_logic_vector(size-1 downto 0) -- Decomment if you want to see the result
   );
@@ -56,7 +56,7 @@ begin
 
   COMB_DIV : if divider_implementation = 0 generate
 
-    division_finished_out <= div_enable_i;
+    div_finished <= div_enable;
 
     process(all)
     begin
@@ -77,8 +77,8 @@ begin
         divisor_i             => divisor_i,
         reset                 => reset,
         clk                   => clk,
-        div_enable_i          => div_enable_i,
-        division_finished_out => division_finished_out,
+        div_enable_i          => div_enable,
+        division_finished_out => div_finished,
         result                => result
       );
 
