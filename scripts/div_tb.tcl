@@ -2,7 +2,7 @@
 mkdir -p prim_libs
 vlib prim_libs/div_lib
 vlog -sv tb/div_tb.sv -work prim_libs/div_lib
-vcom -2008 modules/Dynamic_Shifter/Dynamic_Shifter.vhd	-work prim_libs/div_lib
+vcom -2008 modules/Dynamic\ Shifter/Dynamic_Shifter.vhd	-work prim_libs/div_lib
 vcom -2008 modules/Divider/divider_LS.vhd				-work prim_libs/div_lib
 vcom -2008 modules/Divider/divider_HF.vhd				-work prim_libs/div_lib
 vcom -2008 modules/Divider/divider_HP.vhd				-work prim_libs/div_lib

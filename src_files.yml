@@ -5,7 +5,7 @@ KPrim:
   files: [
     modules/Binary\ Counters/clz_decomposing.vhd,
     modules/Binary\ Counters/clz_for.vhd,
-    modules/Dynamic_Shifter/Dynamic_Shifter.vhd,
+    modules/Dynamic\ Shifter/Dynamic_Shifter.vhd,
     modules/Dividers/divider_HF.vhd,
     modules/Dividers/divider_HP.vhd,
     modules/Dividers/divider_LS.vhd,
