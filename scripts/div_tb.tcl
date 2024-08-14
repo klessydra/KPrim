@@ -8,6 +8,6 @@ vcom -2008 modules/Divider/divider_HF.vhd				-work prim_libs/div_lib
 vcom -2008 modules/Divider/divider_HP.vhd				-work prim_libs/div_lib
 vcom -2008 modules/Divider/divider_std.vhd				-work prim_libs/div_lib
 vcom -2008 modules/Divider/divider_wrapper.vhd			-work prim_libs/div_lib
-vcom -2008 modules/Binary\ Counters/clz_decomposing.vhd	-work prim_libs/div_lib
+vcom -2008 modules/Binary\ Counter/clz_decomposing.vhd	-work prim_libs/div_lib
 vsim -voptargs=+acc prim_libs/div_lib.div_tb
 add wave -r sim:/div_tb/*

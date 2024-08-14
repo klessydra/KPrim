@@ -3,12 +3,12 @@ KPrim:
     .,
   ]
   files: [
-    modules/Binary\ Counters/clz_decomposing.vhd,
-    modules/Binary\ Counters/clz_for.vhd,
+    modules/Binary\ Counter/clz_decomposing.vhd,
+    modules/Binary\ Counter/clz_for.vhd,
     modules/Dynamic\ Shifter/Dynamic_Shifter.vhd,
-    modules/Dividers/divider_HF.vhd,
-    modules/Dividers/divider_HP.vhd,
-    modules/Dividers/divider_LS.vhd,
-    modules/Dividers/divider_std.vhd,
-    modules/Dividers/divider_wrapper.vhd,
+    modules/Divider/divider_HF.vhd,
+    modules/Divider/divider_HP.vhd,
+    modules/Divider/divider_LS.vhd,
+    modules/Divider/divider_std.vhd,
+    modules/Divider/divider_wrapper.vhd,
   ]
