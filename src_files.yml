@@ -10,5 +10,5 @@ KPrim:
     modules/Divider/divider_HP.vhd,
     modules/Divider/divider_LS.vhd,
     modules/Divider/divider_std.vhd,
-    modules/Divider/divider_wrapper.vhd,
+    modules/Divider/divider.vhd,
   ]
