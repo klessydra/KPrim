@@ -2,6 +2,7 @@
 mkdir -p prim_libs
 vlib prim_libs/sqrt_lib
 vlog -sv tb/sqrt_tb.sv									-work prim_libs/sqrt_lib
+vcom -2008 modules/PKG/kprim_pkg.vhd					-work prim_libs/sqrt_lib
 vcom -2008 modules/Dynamic\ Shifter/Dynamic_Shifter.vhd	-work prim_libs/sqrt_lib
 vcom -2008 modules/Divider/divider_LS.vhd				-work prim_libs/sqrt_lib
 vcom -2008 modules/Divider/divider_HF.vhd				-work prim_libs/sqrt_lib

@@ -7,32 +7,44 @@ use std.textio.all;
 use ieee.math_real.all;
 
 
-package kprim is
+package kprim_pkg is
 
-  function or_vect_bits(input_vector : in std_logic_vector)  return std_logic;
-  function and_vect_bits(input_vector : in std_logic_vector) return std_logic;
-
+  function add_vect_bits(vect : std_logic_vector) return natural;
+  function or_vect_bits(vector : std_logic_vector) return std_logic;
+  function and_vect_bits(vector : std_logic_vector) return std_logic;
 
 end package;
 
-package body kprim is
+package body kprim_pkg is
 
-  function or_vect_bits(input_vector : std_logic_vector) return std_logic is
-    variable result : std_logic := '0';
+  function add_vect_bits(vect : std_logic_vector) return natural is
+    variable count : natural;
   begin
-    for i in input_vector'range loop
-      result := result or input_vector(i);
+    count := 0;
+    for i in vect'range loop
+      if vect(i) = '1' then
+        count := count + 1;
+      end if;
     end loop;
-    return result;
+    return count;
+  end function add_vect_bits;
+
+  function or_vect_bits(vector : std_logic_vector) return std_logic is
+    variable or_result : std_logic := '0';
+  begin
+    for i in vector'range loop
+      or_result := or_result or vector(i);
+    end loop;
+    return or_result;
   end function or_vect_bits;
 
-  function and_vect_bits(input_vector : std_logic_vector) return std_logic is
-    variable result : std_logic := '0';
+  function and_vect_bits(vector : std_logic_vector) return std_logic is
+    variable and_result : std_logic := '1';
   begin
-    for i in input_vector'range loop
-      result := result and input_vector(i);
+    for i in vector'range loop
+      and_result := and_result and vector(i);
     end loop;
-    return result;
+    return and_result;
   end function and_vect_bits;
 
 end package body;

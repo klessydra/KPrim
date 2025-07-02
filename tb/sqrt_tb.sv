@@ -21,7 +21,9 @@ module sqrt_tb;
   // UUT Instance
   sqrt_nr 
   #(
-    .size       (SIZE)
+    .sqrt_implementation (0),
+    .size                (SIZE),
+    .fraction_size       (fraction_size)
   )
   uut (
     .clk_i      (clk_i),
